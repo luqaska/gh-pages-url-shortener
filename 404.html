@@ -27,13 +27,13 @@
         var issueNumber = location.pathname.split("/")[
           PATH_SEGMENTS_TO_SKIP + 1
         ];
-        var homepage =
+        var errorpage =
           location.protocol +
           "//" +
           location.hostname +
           (location.port ? ":" + location.port : "") +
           "/" +
-          location.pathname.split("/")[PATH_SEGMENTS_TO_SKIP];
+          location.pathname.split("/error.html")[PATH_SEGMENTS_TO_SKIP];
 
         var xhr = new XMLHttpRequest();
 
@@ -55,17 +55,17 @@
               url.hostname === location.hostname;
 
             if (isInvalidUrl) {
-              location.replace(homepage);
+              location.replace(errorpage);
             } else {
               location.replace(title);
             }
           } catch (e) {
-            location.replace(homepage);
+            location.replace(errorpage);
           }
         };
 
         xhr.onerror = function () {
-          location.replace(homepage);
+          location.replace(errorpage);
         };
         xhr.open("GET", GITHUB_ISSUES_LINK + issueNumber);
         xhr.send();
