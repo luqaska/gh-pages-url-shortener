@@ -1,0 +1,11 @@
+name: Short URL
+description: Short an URL
+title: ""
+labels: ["url"]
+assignees:
+  - luqaska
+body:
+  - type: markdown
+    attributes:
+      value: |
+        By submiting this URL, you accept our [ToS](https://github.com/luqaska/od.dyn#-tos).
