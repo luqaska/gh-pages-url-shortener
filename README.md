@@ -16,9 +16,11 @@ A URL shortener powered by [nlsn.cf's code](https://github.com/nelsontky/gh-page
 
 3. The newly created short url can be accessed via `od.dyn/{issue_number}`
 
+- [Demo video](https://youtu.be/9tQqACeBUCM)
+
 ## 📄 ToS
 
-You shall not use this service to short URLs with content illegal on the USA and Argentina or that could break [GitHub's ToS](https://docs.github.com/en/github/site-policy/github-terms-of-service)
+You shall not use this service to short URLs with content illegal on the USA and Argentina or that could break [GitHub's ToS](https://docs.github.com/en/github/site-policy/github-terms-of-service) and include on all your submitions' body the following text: `By submiting this URL, I accept Od.dyn's [ToS](https://github.com/luqaska/od.dyn#-tos).`.
 
 ## ☕️ Features
 
