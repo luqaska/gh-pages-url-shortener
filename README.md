@@ -14,6 +14,10 @@ A URL shortener powered by [nlsn.cf's code](https://github.com/nelsontky/gh-page
 
 3. The newly created short url can be accessed via `od.dyn/{issue_number}`
 
+## 📄 ToS
+
+Don't use this service to short URLs with content illegal on the USA and Argentina or that could break [GitHub's ToS](https://docs.github.com/en/github/site-policy/github-terms-of-service)
+
 ## ☕️ Features
 
 1. Unlike many URL shorteners, this one ~~does not need a database~~ uses a
