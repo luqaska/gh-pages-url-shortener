@@ -6,6 +6,8 @@ A URL shortener powered by [nlsn.cf's code](https://github.com/nelsontky/gh-page
 
 ## 👨‍🏫 How to use
 
+0. Make sure you're using [OpenNIC](https://opennic.org). If you're not using it, you can check how to start using it [here](https://welcomegeek.github.io/main_page#start-using-opennic).
+
 1. Enter to [od.dyn](http://od.dyn).
 
 2. Add your long URL to the form.
