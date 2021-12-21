@@ -18,7 +18,7 @@ A URL shortener powered by [nlsn.cf's code](https://github.com/nelsontky/gh-page
 
 ## 📄 ToS
 
-Don't use this service to short URLs with content illegal on the USA and Argentina or that could break [GitHub's ToS](https://docs.github.com/en/github/site-policy/github-terms-of-service)
+You shall not use this service to short URLs with content illegal on the USA and Argentina or that could break [GitHub's ToS](https://docs.github.com/en/github/site-policy/github-terms-of-service)
 
 ## ☕️ Features
 
