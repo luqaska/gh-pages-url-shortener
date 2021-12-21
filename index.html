@@ -1,56 +1,64 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
 <head>
-
-<meta charset="utf-8" />
-
-<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"
+  <meta charset="utf-8" />
+  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"
  />
-
-<title>Od.dyn</title>
+  <title>Od.dyn</title>
+  <style>
+    @font-face {
+      font-family: "Press Start 2P";
+      src: url("fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+    }
+    @font-face {
+      font-family: "Redacted";
+      src: url("fonts/Redacted/Redacted-Regular.ttf");
+    }
+    h1{font-family:"Press Start 2P", sans-serif;}
+    body{text-align:center;font-family:sans-serif;}
+    #last div{margin:10px 30%;border:solid 2px black;border-radius:2px;}
+    form{font-size:100%;}
+    .redacted{font-family:"Redacted", sans-serif;}
+  </style>
 </head>
 <body>
-<h1>Od.dyn URL shortener</h1>
-<div>
-<form method="GET" action="https://github.com/luqaska/od.dyn/issues/new">
-<input type="url" name="title" width="80%" placeholder="Long URL">
-<textarea style="display:none" name="body">- [x] By submiting this URL, I accept Od.dyn's [ToS](https://github.com/luqaska/od.dyn#-tos).</textarea>
-<input type="submit" value="Submit">
-</form>
+  <h1>Od.dyn</h1>
+  <p>URL shortener</p>
+  <div>
+    <form method="GET" action="https://github.com/luqaska/od.dyn/issues/new">
+      <input type="url" name="title" width="80%" placeholder="Long URL" />
+      <textarea style="display:none" name="body">- [x] By submiting this URL, I accept Od.dyn's [ToS](https://github.com/luqaska/od.dyn#-tos).</textarea>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+  <div id="last"></div>
+  <div id="tos">
+    <p>You shall not use this service to short URLs with content illegal on the USA and Argentina or that could break <a href="https://docs.github.com/en/github/site-policy/github-terms-of-service">GitHub's ToS</a></p>
 </div>
-<p>
-Don't use this service to short URLs with content illegal on the USA and Argentina or
-that could break <a href="https://docs.github.com/en/github/site-policy/github-terms-of-service">GitHub's ToS</a>
-</p>
-
-<div id="last"></div>
-<p><a href="https://github.com/luqaska/od.dyn">Source code</a> - <a href="https://github.com/luqaska/od.dyn/blob/main/LICENSE">GPLv3</a></p>
-<script type="text/javascript">
-var url;
-var i = 1;
-var listHeader = "<h2>Last shortened URL</h2>\n";
-function updateList(){
-  try{
-    fetch('https://api.github.com/repos/luqaska/od.dyn/issues')
-      .then(response => response.json())
-      .then(function(data){
-        url =
-          location.protocol +
-          "//" +
-          location.hostname +
-          (location.port ? ":" + location.port : "") +
-          "/" + data[0]["number"].toString();
-        document.getElementById("last").innerHTML = listHeader+'<p><b><a href="'+url+'">'+url+"</a></b> by <i>"+data[0]["user"]["login"]+"</i></p>";
-      });
-  }
-  catch(err){
-    document.getElementById("last").innerHTML = listHeader+"<p>Your browser doesn't support fetch(), so this doesn't works. You can get something similar here <a href='https://github.com/luqaska/od.dyn'>here</a>.</p>";
-  }
-}
-updateList();
-setInterval(updateList, 5000);
-</script>
+  <footer><a href="https://github.com/luqaska/od.dyn">Source code</a> - <a href="https://github.com/luqaska/od.dyn/blob/main/LICENSE">GPLv3</a> - <a class="redacted" href="http://od.dyn/3">Trolling</a></footer>
+  <script type="text/javascript">
+    var url;
+    var listHeader = "<div><h2>Last shortened URL</h2>";
+    function updateList(){
+      try{
+        fetch('https://api.github.com/repos/luqaska/od.dyn/issues')
+          .then(response => response.json())
+          .then(function(data){
+            url =
+              location.protocol +
+              "//" +
+              location.hostname +
+              (location.port ? ":" + location.port : "") +
+              "/" + data[0]["number"].toString();
+            document.getElementById("last").innerHTML = listHeader+'<p><b><a href="'+url+'">'+url+"</a></b> by <i>"+data[0]["user"]["login"]+"</i></p></div>";
+          });
+      }
+      catch(err){
+        document.getElementById("last").innerHTML = listHeader+"<p>Your browser doesn't support fetch(), so this doesn't works. You can get something similar here <a href='https://github.com/luqaska/od.dyn'>here</a>.</p></div>";
+      }
+    }
+    updateList();
+    setInterval(updateList, 5000);
+  </script>
 </body>
-
 </html>
