@@ -32,8 +32,8 @@
           "//" +
           location.hostname +
           (location.port ? ":" + location.port : "") +
-          "/" +
-          location.pathname.split("/error.html")[PATH_SEGMENTS_TO_SKIP];
+          "/error.html" +
+          location.pathname.split("/")[PATH_SEGMENTS_TO_SKIP];
 
         var xhr = new XMLHttpRequest();
 
