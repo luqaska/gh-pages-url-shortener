@@ -17,7 +17,6 @@
     h1{font-family:"Press Start 2P", sans-serif;}
     body{text-align:center;font-family:sans-serif;}
     #last div{margin:10px 30%;border:solid 2px black;border-radius:2px;}
-    form{font-size:100%;}
     .redacted{font-family:"Redacted", sans-serif;}
   </style>
 </head>
@@ -26,15 +25,13 @@
   <p>URL shortener</p>
   <div>
     <form method="GET" action="https://github.com/luqaska/od.dyn/issues/new">
-      <input type="url" name="title" width="80%" placeholder="Long URL" />
+      <input type="url" name="title" placeholder="Long URL" />
       <textarea style="display:none" name="body">By submiting this URL, I accept Od.dyn's [ToS](https://github.com/luqaska/od.dyn#-tos).</textarea>
       <input type="submit" value="Submit" />
     </form>
   </div>
   <div id="last"></div>
-  <div id="tos">
-    <p>You shall not use this service to short URLs with content illegal on the USA and Argentina or that could break <a href="https://docs.github.com/en/github/site-policy/github-terms-of-service">GitHub's ToS</a></p>
-</div>
+  <p>You shall not use this service to short URLs with content illegal on the USA and Argentina or that could break <a href="https://docs.github.com/en/github/site-policy/github-terms-of-service">GitHub's ToS</a></p>
   <footer><a href="https://github.com/luqaska/od.dyn">Source code</a> - <a href="https://github.com/luqaska/od.dyn/blob/main/LICENSE">GPLv3</a> - <a class="redacted" href="http://od.dyn/3">Trolling</a></footer>
   <script type="text/javascript">
     var url;
