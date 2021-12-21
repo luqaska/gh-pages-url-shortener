@@ -1,30 +1,18 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-![Total Lines](https://img.shields.io/tokei/lines/github/nelsontky/gh-pages-url-shortener?color=green)
-![GitHub stars](https://img.shields.io/github/stars/nelsontky/gh-pages-url-shortener?style=social)
 
-# 🔗 GitHub Pages URL Shortener
+# 🔗 Od.dyn
 
-This is a minimal URL shortener that can be entirely hosted on GitHub pages. It
-does not need the maintenance of any servers or databases and can be hosted
-entirely on GitHub for free!
+A URL shortener powered by [nlsn.cf's code](https://github.com/nelsontky/gh-pages-url-shortener) & GitHub
 
-[Yay! We got to the top of HN!](https://news.ycombinator.com/item?id=25110879)
+## 👨‍🏫 How to use
 
-<img src="https://i.imgur.com/ZfD7XGt.png" alt="Top of HN" width="240px">
+1. Enter to [od.dyn](http://od.dyn).
 
-And on GitHub trending!
+2. Add your long URL to the form.
 
-<img src="https://i.imgur.com/OkYCSOx.png" alt="GitHub Trending" width="240px">
+4. Click on "Create issue".
 
-## 👨‍🏫 Demo
-
-1. [nlsn.cf/1](https://nlsn.cf/1) should link to this repo.
-
-1. To add a new short link, add an issue with the title being the link you want
-   to shorten (including the `http(s)://`) to
-   [https://github.com/nelsontky/gh-pages-url-shortener-db/issues](https://github.com/nelsontky/gh-pages-url-shortener-db/issues).
-
-1. The newly created short url can be accessed via `nlsn.cf/{issue_number}`
+3. The newly created short url can be accessed via `od.dyn/{issue_number}`
 
 ## ☕️ Features
 
@@ -32,7 +20,7 @@ And on GitHub trending!
    "database" in the form of GitHub issues and can be entirely hosted on GitHub
    pages.
 
-1. There is no need for the pound symbol - short URLs look clean like this:
+2. There is no need for the pound symbol - short URLs look clean like this:
    `nlsn.cf/1` instead of looking like this: `nlsn.cf/#1`.
 
 ## 💡 How does this work?
