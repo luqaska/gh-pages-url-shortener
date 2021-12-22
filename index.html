@@ -48,7 +48,7 @@
               (location.port ? ":" + location.port : "") +
               "/" + data[0]["number"].toString();
             if ((url).indexOf('vercel.app') > -1) {
-              url = text.replace("vercel.app", "now.sh");
+              url = url.replace("vercel.app", "now.sh");
             }
             document.getElementById("last").innerHTML = listHeader+'<p><b><a href="'+url+'">'+url+"</a></b> by <i>"+data[0]["user"]["login"]+"</i></p></div>";
           });
