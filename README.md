@@ -8,10 +8,11 @@ A URL shortener powered by [nlsn.cf's code](https://github.com/nelsontky/gh-page
 
 0. Make sure you're using [OpenNIC](https://opennic.org). If you're not using it, you can check how to start using it [here](https://welcomegeek.github.io/main_page#start-using-opennic).
    - If you have a problem, you can use our alternative domains:
-     - oy.now.sh
-     - oy.vercel.app
-     - od-dyn.vercel.app
-     - od-dyn.now.sh
+     - [oy.now.sh](https://oy.now.sh)
+     - [od-dyn.now.sh](https://od-dyn.now.sh)
+     - [oddyn.now.sh](https://oddyn.now.sh)
+     - [jaj.now.sh](https://jaj.now.sh)
+     - [jajas.now.sh](https://jajas.now.sh)
 
 1. Enter to [od.dyn](http://od.dyn).
 
