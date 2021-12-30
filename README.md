@@ -26,7 +26,7 @@ A URL shortener powered by [nlsn.cf's code](https://github.com/nelsontky/gh-page
 
 ## 📄 ToS
 
-You shall not use this service to short URLs with content illegal on the USA and Argentina or that could break [GitHub's ToS](https://docs.github.com/en/github/site-policy/github-terms-of-service) and include on all your submitions' body the following text: `By submiting this URL, I accept Od.dyn's [ToS](https://github.com/luqaska/od.dyn#-tos).`.
+You shall not use this service to short URLs with content illegal on the USA and Argentina or that could break [GitHub's ToS](https://docs.github.com/en/github/site-policy/github-terms-of-service). You may also include on all your submitions' body the following text: `By submiting this URL, I accept Od.dyn's [ToS](https://github.com/luqaska/od.dyn#-tos).`.
 
 ## ☕️ Features
 
